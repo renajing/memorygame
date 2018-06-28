@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="memory.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+	<div id="winModal" class="modal">
+			<img id="trophy" src="./img/trophy.png">
+			</img>
+			<p>You win!
+			</p>
+			<button id="dismissModal" onClick="closeModal('winModal')">Gee Thanks</button>
+		</div>
+
+	<div id="loseModal" class="modal">
+			<img id="cryingdrake" src="./img/drake.jpg">
+			</img>
+			<p>Sorry, you lose!
+			</p>
+			<button id="dismissModal" onClick="closeModal('loseModal')">Dang it</button>
+		</div>
+
+	<div id="start">
+			<button id="startButton" onClick="startGame()">Start Game?</button>
+		</div>
+
+<body>
+	<div id="bodyContainer">
+	<div id="header">
+		<p>Memory Game</p>
+	</div>
+	<div id="stats">
+		<p id="moves">Moves: </p>
+		<div id="timer">Time left: 60</div>
+	</div>
+
+	<div id="memoryGame">
+		<button class="card"></button><button class="card"></button><button class="card"></button><button class="card"></button>
+		<button class="card"></button><button class="card"></button><button class="card"></button><button class="card"></button>
+		<button class="card"></button><button class="card"></button><button class="card"></button><button class="card"></button>
+		<button class="card"></button><button class="card"></button><button class="card"></button><button class="card"></button>
+	</div>
+
+
+	<div id="backCards">
+		<button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button>
+		<button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button>
+		<button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button>	
+		<button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button><button class="hiddenCard"></button>
+	</div>
+</div>
+<script type="text/javascript" src="memory.js"></script>
+</body>
+</html>
